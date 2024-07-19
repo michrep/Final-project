@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="luzon.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <img src="images/Travel & tours.svg" alt="Logo" class="logo-img">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownDestination" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Destination
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDestination">
+                            <li><a class="dropdown-item" href="luzon.html">Luzon</a></li>
+                            <li><a class="dropdown-item" href="visayas.html">Visayas</a></li>
+                            <li><a class="dropdown-item" href="mindanao.html">Mindanao</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="login-button" data-bs-toggle="modal" data-bs-target="#loginModal">Signup</button> <!-- Updated Login Button to trigger Modal -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </div>
+        </div>
+    </nav>
+
+    <section class="top-destination py-5">
+        <div class="container">
+            <h1 class="text-center mb-4">Top Destination in Mindanao</h1>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <img src="images/white_beach.jpg" class="card-img-top" alt="Top Destination">
+                        <div class="card-body">
+                            <h5 class="card-title">Beautiful White Beach</h5>
+                            <p class="card-text">Experience the white sands and clear blue waters. A perfect getaway for relaxation and adventure.</p>
+                            <button class="booknowbutton" onclick="alert('Booking is not available right now.')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="image-gallery py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Destinations</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/white_beach.jpg" class="card-img-top img-overlay" alt="Destination 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Beautiful White Beach</h5>
+                            <p class="card-text">Experience the white sands and clear blue waters.</p>
+                            <button class="booknowbutton" onclick="alert('Booking is not available right now.')">Book Now</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/pinkbeachmindanao1.jpg" class="card-img-top img-overlay" alt="Destination 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Pink Beach</h5>
+                            <p class="card-text">Discover the astonishing pink sand and clear waters</p>
+                            <button class="booknowbutton" onclick="alert('Booking is not available right now.')">Book Now</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/dinagatislandmindanao2.png" class="card-img-top img-overlay" alt="Destination 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Dinagat Island</h5>
+                            <p class="card-text">View the breathtaking islands here in Mindanao </p>
+                            <button class="booknowbutton" onclick="alert('Booking is not available right now.')">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Signup</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="login.php" method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-4 text-center text-md-start">
+                <img src="images/Travel & tours.svg" alt="TravelLogo" class="footer-logo">
+                <p class="footer-text">Your one-stop travel agency for all your adventure needs.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5>Contact Us</h5>
+                <p class="footer-text">123 Travel Agency St, Adventure City, Country</p>
+                <p class="footer-text">Phone: +123 456 7890</p>
+                <p class="footer-text">Email: <a href="mailto:info@travelagency.com">info@travelagency.com</a></p>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-text">Designed and Developed by Michael Jullian R. Replan</p>
+                <p class="footer-text">Email: <a href="mailto:mjr.replan@gmail.com">mjr.replan@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Navbar with Parallax</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <img src="images/Travel & tours.svg" alt="Logo" class="logo-img">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDestination" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Destination
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownDestination">
+                            <li><a class="dropdown-item" href="luzon.html">Luzon</a></li>
+                            <li><a class="dropdown-item" href="visayas.html">Visayas</a></li>
+                            <li><a class="dropdown-item" href="mindanao.html">Mindanao</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="login-button" data-bs-toggle="modal" data-bs-target="#loginModal">Signup</button> <!-- Updated Login Button to trigger Modal -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <section class="contact-section">
+          <div class="container">
+              <h1 class="text-center my-5">Contact Us<span class="underline"></span></h1> <!-- Added underline span -->
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="card mb-4">
+                          <div class="card-body">
+                              <h2>Get in Touch</h2>
+                              <form>
+                                  <div class="mb-3">
+                                      <label for="name" class="form-label">Name</label>
+                                      <input type="text" class="form-control" id="name" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="email" class="form-label">Email</label>
+                                      <input type="email" class="form-control" id="email" required>
+                                  </div>
+                                  <div class="mb-3">
+                                      <label for="message" class="form-label">Message</label>
+                                      <textarea class="form-control" id="message" rows="4" required></textarea>
+                                  </div>
+                                  <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="card mb-4">
+                          <div class="card-body">
+                              <h2>Our Office</h2>
+                              <p><strong>Address:</strong> 123 Travel Agency St, Adventure City, Country</p>
+                              <p><strong>Phone:</strong> +123 456 7890</p>
+                              <p><strong>Email:</strong> <a href="mailto:info@travelagency.com">info@travelagency.com</a></p>
+                              <div class="map-container">
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15443.064814936903!2d121.08635919872911!3d14.612390107087638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b86a654db103%3A0x9399acfb212f41ba!2sGreenpark%2C%20Cainta%2C%201900%20Rizal!5e0!3m2!1sen!2sph!4v1721111724117!5m2!1sen!2sph" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section> 
+    </div>
+  <!-- Login Modal -->
+ <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Signup</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="login.php" method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Signup</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-md-4 text-center text-md-start">
+                <img src="images/Travel & tours.svg" alt="TravelLogo" class="footer-logo">
+                <p class="footer-text">Your one-stop travel agency for all your adventure needs.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5>Contact Us</h5>
+                <p class="footer-text">123 Travel Agency St, Adventure City, Country</p>
+                <p class="footer-text">Phone: +123 456 7890</p>
+                <p class="footer-text">Email: <a href="mailto:info@travelagency.com">info@travelagency.com</a></p>
+            </div>
+            <div class="col-md-4 text-center text-md-end">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-text mt-3">Web Designer: Michael Jullian R. Replan</p>
+                <p class="footer-text">Email: <a href="mailto:mjr.replan@gmail.com">mjr.replan@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

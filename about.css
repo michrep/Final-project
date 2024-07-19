@@ -1,0 +1,173 @@
+/* About section styles */
+.about-section {
+    padding: 100px 0;
+}
+
+.about-section h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #009970;
+    position: relative;
+}
+
+.about-section h1 .underline {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background-color: #009970;
+}
+
+.about-section h2 {
+    color: #009970;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    color: #666777;
+}
+
+.about-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #666777;
+}
+
+.about-section a {
+    color: #009970;
+    text-decoration: none;
+}
+
+.about-section a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+* {
+    box-sizing: border-box;
+}  
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    transition: color 0.4s ease;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: color 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #218838;
+}
+
+.dropdown-menu {
+    background-color: #28a745;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #fff;
+    transition: background-color 0.4s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #218838;
+}
+
+.btn-custom {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    transition: background-color 0.4s ease;
+}
+
+.btn-custom:hover {
+    background-color: #218838;
+}
+
+.footer {
+    padding: 2rem 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer .text-uppercase {
+    font-weight: 600;
+}
+
+.footer .text-dark {
+    color: #343a40;
+    transition: color 0.3s ease;
+}
+
+.footer .text-dark:hover {
+    color: #28a745;
+}
+
+.footer .bg-dark {
+    background-color: #343a40 !important;
+}
+
+.footer .bg-dark .text-white {
+    color: #fff !important;
+}
+
+.logo-img {
+    height: 75px; 
+    width: 75px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .login-button {
+    background-color: #009970;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  
+  .login-button:hover {
+    background-color: #00b383;
+  }
+  

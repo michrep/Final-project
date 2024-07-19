@@ -1,0 +1,429 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+  }  
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+.content-wrapper {
+        flex: 1;
+        padding: 2rem 0;
+}
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    transition: color 0.4s ease;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: color 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #218838;
+}
+
+.dropdown-menu {
+    background-color: #28a745;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #fff;
+    transition: background-color 0.4s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #218838;
+}
+
+.btn-custom {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    transition: background-color 0.4s ease;
+}
+
+.btn-custom:hover {
+    background-color: #218838;
+}
+
+.parallax {
+    background-image: url(images/mainimage.jpg);
+    height: 75vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.parallax-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.parallax-content p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 2rem auto;
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+.content h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #343a40;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #6c757d;
+}
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 70vw;
+    margin: 30px auto;
+    box-shadow: 0 0 15px black;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+  /* Add this class to show the image*/
+  .show {
+    display: block;
+    animation: fadeIn .5s linear;
+  }
+  
+  .mySlides img {
+    width: 100%;
+    padding: 0;
+    margin-bottom: -6px;
+    height: 450px;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  @keyframes fadeOut {
+    from { opacity: 1 }
+    to { opacity: 0 }
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    animation: fadeOut 3s linear;
+    opacity: 0;
+    font-family: 'Mansalva', cursive; 
+    color: #f2f2f2;
+    font-size: 1rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 2px 0 0 0;
+    color: white;
+  }
+  
+  #caption {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Next & previous arrow icons */
+  .prev,
+  .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    transition: .3s all;
+  }
+  
+  .next {
+    border-radius: 10px 0 0 10px;
+  }
+  .prev {
+    border-radius: 0 10px 10px 0;
+  }
+  
+  /* On hover, add a black background color */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Thumnbail images */
+  .row {
+    display: flex;
+  }
+  
+  .thumbnail {
+    width: 20%;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    margin: 0;
+    height: 100px;
+  }
+  
+  /* Add a opaque effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    transition: .5s;
+  }
+  
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  .active {
+    opacity: 1;
+    transform: scale(.8);
+    transition: .3s;
+  }
+
+.why-book-section {
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 4rem 0;
+    text-align: center;
+    border-bottom: 2px solid #28a745; /* Add a border line at the bottom */
+    border-top: 2px solid #28a745;
+}
+
+.why-book-section h2 {
+    color: #009970;
+    margin-bottom: 20px;
+}
+
+.why-book-section p {
+    color: #666777;
+    font-size: 1.1rem;
+}
+
+.why-book-section .btn-outline-primary {
+    margin-top: 20px;
+    padding: 12px 32px;
+    border: 2px solid #009970;
+    color: #009970;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.why-book-section .btn-outline-primary:hover {
+    background-color: #009970;
+    color: #fff;
+}
+
+.customer-review-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.customer-review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.customer-review-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 400px;
+    width: 100%;
+    position: relative; /* Ensure positioning context */
+}
+
+.customer-review-background {
+    position: relative;
+    z-index: 1; /* Ensure review text is above background */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+.customer-review-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/chocolate_hills.jpg); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Adjust opacity as needed */
+    border-radius: 8px;
+    z-index: 0; /* Ensure behind content */
+}
+
+.customer-review-card:hover {
+    transform: translateY(-5px);
+}
+
+.customer-review-content {
+    padding-bottom: 20px;
+}
+
+.review-text {
+    font-size: 1.1rem;
+    color: #666777;
+    margin-bottom: 15px;
+}
+
+.review-author {
+    font-size: 1rem;
+    color: #303030;
+    font-style: italic;
+}
+
+.quote-icon {
+    color: #009970; /* Adjust color as needed */
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-bottom: 10px; /* Adjust spacing */
+    display: block; /* Ensures it's on its own line */
+    text-align: center; /* Centers the icon */
+}
+
+.checked {
+    color: orange;
+  }
+
+  .footer {
+    background-color: #009970;
+    color: #ffffff;
+    padding: 2rem 3rem;
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+}
+
+.footer-logo {
+    width: 90px;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #28a745;
+}
+
+.footer h5 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.social-icons {
+    margin: 1rem 0;
+}
+
+.social-icon {
+    color: #343a40;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #28a745;
+}
+
+.logo-img {
+  height: 75px; 
+  width: 75px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.login-button {
+  background-color: #009970;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background-color: #00b383;
+}
